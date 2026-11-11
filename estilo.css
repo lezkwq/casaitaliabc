@@ -94,6 +94,17 @@ footer{background:var(--green);color:var(--paper)}
  .wordmark{font-size:27px;margin-right:auto}
  .menu-toggle:not([hidden]){display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px;background:none;border:0;color:var(--wine);font-size:13px;font-weight:650;cursor:pointer}
  nav{order:1;flex-basis:100%;flex-wrap:wrap;padding-bottom:8px}
+ .menu-toggle:not([hidden]) + nav{
+  position:absolute;
+  inset:100% -16px auto;
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  padding:8px 16px;
+  background:var(--paper);
+  border-block:1px solid var(--rule);
+  box-shadow:0 8px 16px rgb(41 34 29 / 12%);
+ }
  nav[hidden]{display:none}
  nav a{display:flex;align-items:center;min-height:44px}
  .hero,.split,.menu-section,.visit{grid-template-columns:1fr;min-height:0}
